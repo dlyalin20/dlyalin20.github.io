@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "bulma-0.9.0/bulma.sass";
+
+%underline {
+    display: block;
+    color: LightGrey;
+    font-weight: lighter;
+    content: "____";
+}
+
+.semi-header{
+    font-size: 80%;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.semi-header::after, #quote::after, .q::after{
+    @extend %underline;
+}
+
+#quote::after{
+    font-weight: normal;
+}
+
+#quote {
+    font-weight: lighter;
+    position: relative;
+}
+
+.q {
+    font-size: 80%;
+    position: relative;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+ .q::after {
+     font-weight: bold;
+ }
